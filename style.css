@@ -229,6 +229,10 @@ section#hero .button1,section#hero .button2{
           object-fit: contain;
           border-radius: 10px;
         }
+        
+        img:hover {
+          transform: scale(1.2);
+        }
 
         .image_container {
           width: 100%;
