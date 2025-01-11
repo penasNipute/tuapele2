@@ -1,0 +1,275 @@
+/*
+Theme Name: Tua Pele 2
+Theme URI: 
+Author: Penas Nipute
+Author URI: 
+Description: Tema para o ecomerce da Tua Pele
+Version: 1.0
+*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Raleway", serif;
+  a{
+    text-decoration: none;
+    color: #fff
+  }
+  
+}
+
+h1{
+  weight:bold;
+  font-size:44px;
+  letter-spacing:0;
+  line-height:140%;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header{
+  background-color:#B58159;
+  height: 12vh;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  font-weight: 300;
+  
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo a{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    img{
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+    }
+  
+    h3{
+      font-size: 1.5em;
+      font-weight: 300;
+    }
+  }
+
+
+
+  nav{
+    ul{
+      display: flex;
+      li{
+        margin-left: 20px;
+        a{
+          font-weight: 500;
+          line-height: 24.96px;
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+
+  .content{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    a{
+      font-size: 1em;
+      font-weight: 300;
+      padding: 10px 20px;
+      border-radius: 5px;
+      /* background-color: #fff; */
+      color: #fafafa;
+    }
+  }
+}
+
+
+/* =================== HERO ======================= */
+section#hero {
+  display: flex;
+  width: 100%;
+  height: 88vh;
+  background-image:url('./images/header-image.jpg');
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+section#hero .hero_main{
+  width: 90%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+section#hero .hero_main .content{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+
+
+  h1{
+    color:#fff;
+
+    margin-top: 400px;
+  }
+
+  button{
+    width:200px;
+    background-color:transparent;
+    border: 4px solid #fff;
+    border-radius:15px;
+    padding:10px 20px;margin: 0 auto;
+    color:#fff;
+    font-size:1.25rem;
+    cursor:pointer;
+    outline:none;
+    text-transform:uppercase;
+  }
+}
+
+
+
+section#hero .button1,section#hero .button2{
+  width: 5%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+
+
+}
+
+.button_left{
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #007BFF; 
+  cursor: pointer;
+}
+
+.button_right{
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 20px solid #007BFF; 
+  cursor: pointer;
+}
+
+/* =================== PRODUCTS ======================= */
+#products {
+  .container{
+    display:flex;
+    flex-direction:column;
+    gap: 1rem;
+  
+    .products_header{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      width: 100%;
+      padding: 20px;
+  
+      h2{
+        width: 50%;
+        max-width:350px;
+        font-size:2rem;
+        font-weight:800;
+      }
+      p{
+        width: 50%;
+        font-size:1.5rem;
+        font-weight:300;
+        text-align:left;
+      }
+    }
+
+    .products_container{
+      display:grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1rem;
+
+      .product{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        
+        img{
+          width: 100%;
+          height: 200px;
+          object-fit: contain;
+          border-radius: 10px;
+        }
+
+        .image_container {
+          width: 100%;
+          height: 100%;
+          /* overflow: hidden; */
+          /* position: relative; */
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .image_container img {
+          width: 100%;
+          transition: transform 0.3s ease;
+        }
+        .image_container img:hover {
+          transform: scale(1.2);
+        }
+
+        h3{
+          font-size: 1.5rem;
+          font-weight: 800;
+        }
+
+        p{
+          font-size: 1rem;
+          font-weight: 300;
+        }
+
+        button{
+          width: 100%;
+          background-color: #007BFF;
+          color: #fff;
+          padding: 10px;
+          border-radius: 5px;
+          cursor: pointer;
+          outline: none;
+          border: none;
+        }
+      }
+
+      
+    }
+  }
+}
