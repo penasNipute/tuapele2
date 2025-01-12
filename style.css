@@ -269,6 +269,14 @@ section#hero .button1,section#hero .button2{
 
 .product:hover {
   transform: translateY(-5px); /* Levitação suave no hover */
+  color: #A46137;
+
+}
+
+.product:hover h3{
+  transform: translateY(-5px); /* Levitação suave no hover */
+  color: #A46137;
+
 }
 
 .product img {
@@ -296,7 +304,7 @@ section#hero .button1,section#hero .button2{
   color: #A46137;
 }
 
-button {
+.product button {
   width: 100%;
   max-width: 250px;
   background-color: transparent;
